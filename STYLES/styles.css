@@ -15,7 +15,6 @@
 header {
     width: 100%;
     height: 70px;
-    position: fixed;
     top: 0;
     left: 0;
 }
@@ -27,11 +26,17 @@ header {
 .container .btn-menu {
     float: left;
     line-height: 70px;
+    display: flex;
+    background-color: #6C33CC;
 }
 .container .btn-menu i {
     color: #fff;
     font-size: 25px;
     cursor: pointer;
+}
+.logo img {
+    width: 120px;
+    float:;
 }
 .container .menu {
     float: right;
@@ -100,7 +105,9 @@ header {
     font-size: 18px;
     transform: translateX(-100%);
 }
-
+.menu {
+    background-color: #6C33CC;
+}
 /*
 .menu {
     width: 100%;
@@ -131,7 +138,8 @@ header {
 
 .cuerpo {
     background-color: var(--principal);
-    margin-top: -35px;
+    margin-top: 250px;
+
 }
 .cuerpo img {
     width: 70%;
@@ -586,13 +594,12 @@ header {
         margin-left: 0.2px;
     }
     
-    .menu-oculto{
+    .btn-menu{
         display: block;
         height: 5px;
         margin-left: 9px;
     }
-    
-    .menu-oculto i {
+    .btn-menu i {
         color: var(--ternario);
         background-color: var(--principal);
         margin-top: 16px;
@@ -603,6 +610,7 @@ header {
     }
     .menu {
         margin-left: 10px;
+        display: none;
     }
     .menu ul li {
         font-size: 15px;
@@ -704,6 +712,74 @@ header {
     .menu-2 {
         margin-left: 140px;
         margin-bottom: 50px;
+    }
+    .container .menu {
+    float: right;
+    line-height: 70px;
+    }
+    .container .menu a{
+        display: inline-block;
+        padding: 15px 10px;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+        border-bottom: 15px;
+    }
+    .container .menu a:hover {
+        border-bottom: 2px solid #c7c7c7;
+        padding: 5px 10px;
+    }
+    #btn-menu {
+        display: none;
+    }
+   
+    .container-menu {
+        position: absolute;
+        background: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #btn-menu:checked ~ .container-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cont-menu {
+        width: 100%;
+        max-width: 250px;
+        background: #1c1c1c;
+        height: 100vh;
+        position: relative;
+        transition: all 50ms ease;
+    }
+    .cont-menu nav {
+        transform: translateY(15%);
+    }
+    .cont-menu nav a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+    .cont-menu nav a:hover {
+        border-left: 5px solid #c7c7c7;
+        background-color: 1f1f1f;
+    }
+    .cont-menu label {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        transform: translateX(-100%);
     }
     /*FIN media query celular*/
 
