@@ -7,14 +7,48 @@
     <script src="https://kit.fontawesome.com/fc99469bcc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/STYLES/normalize.css">
     <link rel="stylesheet" href="/STYLES/styles.css">
-    <script src="https://kit.fontawesome.com/fc99469bcc.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
 </head>
 <body>
     <header>
+    <div class="container">
+        <div class="btn-menu"> 
+            <!-- boton hamburguesa -->
+            <label for="btn-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div> 
         <div class="logo">
             <img src="https://d522d1c921.clvaw-cdnwnd.com/1295ac9cd1df9ce8ba464646d743b2d9/200000062-2824b2824f/LOGO-7.png?ph=d522d1c921" alt="logo">
         </div>
-        <div class="menu">
+        <!-- Menu orizontal-->
+        <nav class="menu">
+            <a href="si-nova-gestion.html" target="">Inicio</a>
+            <a href="#" target="">Sobre nosotros</a>
+            <a href="servicios.html" target="_blank">Servicios</a>
+            <a href="#" target="">Oferta de empleo</a>
+            <a href="#" target="">Contáctenos</a>
+        </nav>    
+    </div>
+    </header>
+    <!-- casilla de selección con ID -->
+    <input type="checkbox" id="btn-menu"> 
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="si-nova-gestion.html" target="">Inicio</a>
+                <a href="#" target="">Sobre nosotros</a>
+                <a href="servicios.html" target="_blank">Servicios</a>
+                <a href="#" target="">Oferta de empleo</a>
+                <a href="#" target="">Contáctenos</a>
+            </nav>   
+            <!-- boton x menu -->
+            <label for="btn-menu"
+                <i class="fas fa-times"></i>
+            </label>
+        </div> 
+    </div>
+    <!--<div class="menu">
             <ul>
                 <li>
                     <a href="si-nova-gestion.html" target="">Inicio</a>
@@ -31,10 +65,10 @@
                 <li>
                     <a href="#" target="">Contáctenos</a>
                 </li>
-            </ul>
-        </div>
-    </header>
-    </div>
+            </ul> 
+        </div>-->
+        
+    
     <div class="redes">
         <ul>
             <li>
@@ -57,13 +91,98 @@
     <div class="cuerpo">
         <img src="/images/joven-practicas.jpg" alt="oficina">
     </div>
-        <div class="portada">
-            <h1>SI Nova Gestión</h1>
-            <h3>Lo hace por ti</h3>
-            <p>
-            Contamos con un equipo de alta calidad y prestamos servicios de asesorías, auditorias especializadas en contabilidad, talento humano, seguridad social, calidad, medio ambiente y seguridad y salud en el trabajo según la normalidad vigente.
-            </p>
+    <div class="portada">
+        <h1>SI Nova Gestión</h1>
+        <h3>Lo hace por ti</h3>
+        <p>Contamos con un equipo de alta calidad y prestamos servicios de asesorías, auditorias especializadas en contabilidad, talento humano, seguridad social, calidad, medio ambiente y seguridad y salud en el trabajo según la normalidad vigente.</p>
+    </div>
+    <div class="nuestra-experiencia">
+        <h2>Servicio integral para tu Empresa</h2>
+        <h3>Comprueba nuestra experiencia</h3>
+    </div>
+    <div class="nuestros-servicios">
+        <h1>Nuestros Servicios</h1>
+    </div>
+    <div class="descripcion-servicios">
+        <a href="/servicios.html" target="_blank">
+        <div class="consultoria">
+            <div class="img-sgi">
+                <img id="wnd_ImageBlock_188636597_img" src="https://d522d1c921.clvaw-cdnwnd.com/1295ac9cd1df9ce8ba464646d743b2d9/200000031-2ab522ab55/LOGO-8.png?ph=d522d1c921" alt="SGI">
+            </div>
+            <h2>Consultoría en gestión de empresas</h2>
+            <p>Servicios de consultoría integral que contribuyen al fortalecimiento y mejora de los procesos en las organizaciones, gracias a un equipo humano que permite satisfacer las necesidades del cliente.</p>
         </div>
-    
+        </a>
+        <a href="/servicios.html" target="_blank">
+        <div class="talento-humano">
+            <div class="img-talento-humano">
+                <img src="/images/mujer-seleccionando-fotografias-personas.jpg" alt="">
+            </div>
+            <h2>Talento Humano</h2>
+            <p>La Gestión del Talento Humano es la estrategia de una organización para la contratación, capacitación y retención de los empleados que desarrollan un mejor rendimiento. Se basa en cuatro fases que consisten en seleccionar al personal, evaluar su potencial, desarrollarlo y retenerlo.</p>
+        </div>
+        </a>
+        <a href="/servicios.html" target="_blank">
+        <div class="contabilidad-y-finanzas">
+            <div class="img-contabilidad-y-finanzas">
+                <img id="wnd_ImageBlock_307617415_img" src="https://d522d1c921.clvaw-cdnwnd.com/1295ac9cd1df9ce8ba464646d743b2d9/200000022-448184481b/serviccios-02-768x512.jpg?ph=d522d1c921" alt="">
+            </div>
+            <h2>Contabilidad y Finanzas</h2>
+            <p>La contabilidad registra datos y permite una visión general de la situación de una empresa, las finanzas buscan hacer predicciones y facilitar la toma de decisiones minimizando futuros riesgos.</p>
+        </div>
+        </a>
+        <a href="/servicios.html" target="_blank">
+        <div class="seguridad-social">
+            <div class="img-seguridad-social">
+                <img src="/images/banner-medico-estetoscopio.jpg" alt="">
+            </div>
+            <h2>Seguridad social</h2>
+            <p>La seguridad social es el conjunto armónico de entidades públicas y privadas, normas y procedimientos y está conformado por los regímenes generales establecidos para pensiones, salud, riesgos laborales, subsidio familiar y los servicios sociales complementarios que se definen en la ley.</p>
+        </div>
+        </a>
+        <a href="/servicios.html" target="_blank">
+        <div class="auditorias">
+            <div class="img-auditorias">
+                <img id="wnd_ImageBlock_963646308_img" src="https://d522d1c921.clvaw-cdnwnd.com/1295ac9cd1df9ce8ba464646d743b2d9/200000035-483f7483fa/auditoria%20lupa.jpg?ph=d522d1c921" alt="">
+            </div>
+            <h2>Auditorias</h2>
+            <p>La interacción de los auditores externos e internos genera una visión más completa de la realidad organizacional y al vincular sus resultados, el trabajo de ambos permite robustecer la información para la mejor toma de decisiones.</p>
+        </div>
+        </a>
+        <a href="/servicios.html" target="_blank">   
+        <div class="pila">
+            <div class="planilla">
+                <img id="wnd_ImageBlock_13262855_img" src="https://d522d1c921.clvaw-cdnwnd.com/1295ac9cd1df9ce8ba464646d743b2d9/200000029-33f7433f78/PILA.png?ph=d522d1c921" alt="">
+            </div>
+            <h2>Planilla Integrada de Liquidación de Aportes (PILA)</h2>
+            <p>Formato inteligente que le permite a todas las personas y empresas, liquidar y pagar sus aportes de seguridad al Sistema de la Protección Social, es decir, a los subsistemas de salud, pensiones, riesgos laborales, cajas de compensación, Sena e ICBF.</p>
+        </div>
+        </a> 
+    </div>
+    <footer>
+        <div class="logo1">
+            <img src="https://d522d1c921.clvaw-cdnwnd.com/1295ac9cd1df9ce8ba464646d743b2d9/200000062-2824b2824f/LOGO-7.png?ph=d522d1c921" alt="logo">
+        </div>
+        <div class="menu-1">
+            <ul>
+                <li><a href=""><strong>Contáctanos</strong></a></li>
+                <li><a href="/servicios.html" target="_blank">Servicios</a></li>
+                <li><a href="">Ofertas de empleo</a></li>
+                <li><a href="">Agenda con nosotros</a></li>
+            </ul>
+        </div>
+        <div class="menu-2">
+            <ul>
+                <li>CEL: 350 532 00 04</li>
+                <li>info@novagestion.com.co</li>
+            </ul>
+            <div class="telefono">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="email">
+                <i class="fas fa-mail-bulk"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
