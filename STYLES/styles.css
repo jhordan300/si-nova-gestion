@@ -36,7 +36,7 @@ header {
 }
 .logo img {
     width: 120px;
-    float:;
+    /* float:; */
 }
 .container .menu {
     float: right;
@@ -175,7 +175,7 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 6.5%;
 }
-.redes{ 
+.redes{
     display: flex;
     margin-top: -100px;
     margin-left: 96%;
@@ -234,8 +234,8 @@ header {
     margin-top: -30px;
     height: 65px;
     width: 365px;
-    margin-left: 610px;
-    border-radius: 5px;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
 }
 .nuestros-servicios h1 {
     padding: 15px;
@@ -245,10 +245,11 @@ header {
 }
 .descripcion-servicios {
     background-color: var(--ternario);
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
-    margin-top: -3px;
+    padding-top: 120px;
 }
 .descripcion-servicios a {
     text-decoration: none;
@@ -258,8 +259,6 @@ header {
     width: 300px;
     background-color: var(--principal);
     padding: 20px;
-    margin-top: 100px;
-    margin-left: 300px;
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
@@ -325,7 +324,6 @@ header {
     width: 300px;
     background-color: var(--principal);
     padding: 20px;
-    margin-top: 100px;
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
@@ -370,7 +368,6 @@ header {
     width: 300px;
     background-color: var(--principal);
     padding: 20px;
-    margin-top: 100px;
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
@@ -415,8 +412,6 @@ header {
     width: 300px;
     background-color: var(--principal);
     padding: 20px;
-    margin-top: 50px;
-    margin-left: 300px;
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
@@ -461,7 +456,6 @@ header {
     width: 300px;
     background-color: var(--principal);
     padding: 20px;
-    margin-top: 50px;
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
@@ -506,7 +500,6 @@ header {
     width: 300px;
     background-color: var(--principal);
     padding: 20px;
-    margin-top: 50px;
     border-radius: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     cursor: pointer;
@@ -527,17 +520,26 @@ header {
     color: white;
     margin-bottom: 20px;
 }
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+
 .logo1 {
+    order: 1;
     width: 150px;
     height: 150px;
-    margin-left: 46%;
-    margin-top: 10px;
 }
 .logo1 img {
     width: 150px;
 }
+
 .menu-1 {
-    margin-top: -150px;
+    order: 0;
     margin-left: 50px;
 }
 .menu-1 ul {
@@ -549,27 +551,23 @@ header {
 .menu-1 ul li a {
         text-decoration: none;
 }
+
 .menu-2 {
-    margin-top: -120px;
-    margin-left: 1350px;
+    order: 2;
 }
 .menu-2 ul {
     list-style: none;
 }
 .menu-2 ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: 140px;
     margin-bottom: 40px;
 }
 .menu-2 i {
     color: var(--principal);
     margin-left: -35px;
-}
-.telefono {
-    margin-top: -117px;
-    padding-bottom: 50px;
-}
-.email {
-    margin-top: -8px;
 }
 
 /*.menu-oculto {
@@ -584,7 +582,7 @@ header {
 }*/
 
 /*INICIO media query celular*/
-@media (max-width: 576px){
+@media (max-width: 576px) {
     header {
         width: 100%;
     }
@@ -593,7 +591,7 @@ header {
         width: 80px;
         margin-left: 0.2px;
     }
-    
+
     .btn-menu{
         display: block;
         height: 5px;
@@ -733,7 +731,7 @@ header {
     #btn-menu {
         display: none;
     }
-   
+
     .container-menu {
         position: absolute;
         background: rgba(0, 0, 0, .5);
@@ -781,31 +779,163 @@ header {
         font-size: 18px;
         transform: translateX(-100%);
     }
-    /*FIN media query celular*/
+}
+/*FIN media query celular*/
 
-    /*INICIO media query tablets*/
-    @media (min-width: 768px) and (max-width: 1024px){    
-        body {
-        background-color: red;
-        }
-        .menu {
-            margin-left: -100px;
-        }
-        .cuerpo {
-            width: 100%;
-            margin-top: -100px;
-        }
-        .cuerpo img {
-            margin-top: 100px;
-        }
-        .portada {
-            margin-top: -100px;
-        }
-        .portada h1 {
-            margin-top: -100px;
-        }
-        .consultoria {
-            margin-left: 150px;
-        }
+/*INICIO media query tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+    }
+    .menu {
+        margin-left: -100px;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container .btn-menu {
+        display: none;
+    }
+    .container .menu {
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .container .menu a {
+        color: var(--principal);
+    }
+
+    .redes {
+        right: 0;
+        top: 214px;
+    }
+
+    .cuerpo {
+        width: 100%;
+        margin-top: 42px;
+    }
+
+    .cuerpo img {
+        width: 70%;
+    }
+
+    .portada {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .portada h1 {
+        margin: -20px 0 0 20px;
+        width: 220px;
+        font-size: 25px;
+        color: var(--secundario);
+        box-shadow: 2px 2px 7px 1px #83C2F1;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .portada h3 {
+        margin: 0;
+        margin: 0 0 0 20px;
+    }
+
+    .portada p {
+        width: 100%;
+        margin: 0;
+        margin: 0 0 0 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .nuestros-servicios {
+        background-color: var(--ternario);
+        margin-top: -30px;
+        height: 65px;
+        width: 365px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .descripcion-servicios {
+        background-color: var(--ternario);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 130px;
+    }
+
+    .consultoria, .talento-humano, .contabilidad-y-finanzas, .seguridad-social, .auditorias, .pila {
+        margin: 0;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 30px 0;
+    }
+
+    .menu-1 {
+        order: 0;
+        margin: 0
+    }
+
+    .menu-1 ul {
+        list-style: none;
+    }
+
+    .menu-1 ul li {
+        padding: 10px;
+    }
+
+    .menu-1 ul li a {
+        text-decoration: none;
+    }
+
+    .logo1 {
+        order: 1;
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .logo1 img {
+        width: 100%;
+    }
+
+    .menu-2 {
+        order: 2;
+        margin: 0;
+    }
+
+    .menu-2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-2 ul li {
+        padding: 10px;
+        margin: 0;
+        width: max-content;
+        color: var(--principal);
+        display: flex;
+        gap: 10px;
+    }
+    .menu-2 i {
+        color: var(--principal);
+        margin: 0;
     }
 }
