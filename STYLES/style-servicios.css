@@ -35,3 +35,23 @@
     margin-left: 460px;
     margin-bottom: 73px;
 } */
+
+body main {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+body main article {
+    display: flex;
+    background-color: #0866FF;
+}
+body main article .img {
+    width: 300px;
+    height: 300px;
+}
+
+body main article .img img {
+    width: 100%;
+    object-fit: cover;
+}
