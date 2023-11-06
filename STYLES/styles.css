@@ -581,18 +581,6 @@ footer {
     color: var(--principal);
     margin-left: -35px;
 }
-
-/*.menu-oculto {
-    font-size: 25px;
-    margin-left: -50px;
-    color: var(--ternario);
-    display: none;
-}
-.menu-oculto i {
-    padding: 10px;
-
-}*/
-
 /*INICIO media query celular*/
 @media (max-width: 576px) {
     header {
@@ -664,14 +652,16 @@ footer {
     }
 
     .portada h1 {
-        font-size: 20px;
-        width: 200px;
-        margin-left: 80px;
+        font-size: 25px;
+        width: 215px;
+        margin-left: 95px;
+        text-align: center;
     }
 
     .portada h3 {
         text-align: center;
         margin: 0;
+        font-size: 20px;
     }
 
     .portada p {
@@ -824,7 +814,6 @@ footer {
 
 /*INICIO media query tablets*/
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {}
     .menu {
         margin-left: -100px;
     }
@@ -984,3 +973,4 @@ footer {
         margin: 0;
     }
 }
+/*FIN media query tablets*/
